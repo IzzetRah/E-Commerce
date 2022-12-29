@@ -27,7 +27,6 @@ const FlashCard = ({ productItems, addToCart }) => {
     const increment = () => {
         setCount(count + 1)
     }
-
     const settings = {
         dots: false,
         infinite: true,

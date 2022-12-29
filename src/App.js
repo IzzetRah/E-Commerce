@@ -9,20 +9,18 @@ const App = () => {
   // step 1: fetch data from database
   const { productItems } = Data;
   const [cartItem, setCartItem] = useState([]);
-  const addToCart = (product) => {
-    const productExit = cartItem.find((item) => item.id === product.id);
-    if (productExit) {
-      setCartItem(
-        cartItem.map((item) =>
-          item.id === product.id
-            ? { ...productExit, qty: productExit.qty + 1 }
-            : item
-        )
-      );
-    } else {
-      setCartItem([...cartItem, { ...product, qty: 1 }]);
+  const addToCart=(product)=>{
+    const productExit=cartItem.find((item)=>item.id===product.id)
+    if(productExit){
+      setCartItem(cartItem.map((item)=>
+      (item.id===product.id?
+        {...productExit,qty:productExit.qty+1}
+        :item)))
+    }else{
+      setCartItem([...cartItem,{...product,qty:1}])
     }
-  };
+  }
+  
   return (
     <>
       <Router>
