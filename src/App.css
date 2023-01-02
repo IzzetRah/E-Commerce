@@ -82,6 +82,18 @@ button {
     box-shadow: rgb(43 52 69/10%) 0 4px 16px;
 }
 
+.discount{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #e94560;
+    padding: 3px 10px;
+    font-size: 12px;
+    border-radius: 50px;
+    /* color: #fff; */
+    margin: 10px;
+    
+}
 /* -----------------Category-------------- */
 
 .contentWidth {
@@ -149,7 +161,7 @@ button {
 
 .img .discount {
     font-size: 20px;
-    color: black;
+    color: white;
 }
 
 .price h4 {
